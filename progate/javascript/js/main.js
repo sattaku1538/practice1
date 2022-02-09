@@ -38,3 +38,6 @@ $(function(){
     $("html, body").animate({scrollTop:position}, 600, "swing");
     return false;
   });
+
+// ↓↓$(function(){に対応した閉じるボタンを記述しないとJSは反応しない
+});
