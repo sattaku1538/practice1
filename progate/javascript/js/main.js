@@ -39,5 +39,28 @@ $(function(){
     return false;
   });
 
+  /*=================================================
+  PICK UP スライダー
+  ===================================================*/
+  // カルーセル用 jQueryプラグイン「slick」の設定
+  // マニュアル：https://kenwheeler.github.io/slick/
+  $('.slick-area').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '100px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '50px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+
 // ↓↓$(function(){に対応した閉じるボタンを記述しないとJSは反応しない
 });
