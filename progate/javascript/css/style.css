@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #121212;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+a {
+  color: #121212;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+  text-align: center; */
+}
+/*
+フェード表示させる要素に使用するためのクラス
+*/
+/* .fadein {
+  opacity : 0;
+  transform: translateY(20px);
+  transition: all 1s;
+} */
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+/*
+「position: fixed;」でヘッダーを固定し、「z-index: 10;」で前面に表示
+※他のコンテンツでpositionをrelative、absolute、fixedのいずれかに
+設定している場合は、z-indexの数値が大きい方が前面に表示される
+*/
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+}
+/*
+ハンバーガーメニュー
+解説は、「中級編：ストアサイト（インテリア）」のCSS参照
+*/
+/* #navi {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  color: #fff;
+  padding: 60px 25px;
+  background-color: #121212;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 20;
+  opacity: 0;
+} */
